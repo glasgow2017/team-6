@@ -130,7 +130,8 @@ body {
 }
 
 .em-answer.answer-3:hover {
-    background-image: url('images/answer_bg_h.png');
+    background-image: url('images/answer_bg_h.png')
+}
 
 #preload {
     display: none;
@@ -142,7 +143,7 @@ body {
 }
 
 .main-header {
-    background-color: aquamarine;
+    background-color: black;
     background-position: bottom center;
     color: blue;
     height: 50px;
@@ -154,7 +155,8 @@ body {
 }
 
 .main-logo {
-    margin-top: 18px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .intro {
