@@ -9,19 +9,13 @@ body {
 }
 
 .main-header {
-    background-color: aquamarine;
-    background-position: bottom center;
-    color: blue;
-    height: 50px;
+    background-color: black;
 
-    top: 0;
-    width: 100%;
-    max-width: 100%;
-    z-index: 1000;
 }
 
 .main-logo {
-    margin-top: 18px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .intro {
@@ -93,7 +87,7 @@ body {
 }
 
 
-.btn-answer {
+.em-answer {
     cursor: pointer;
     background-color: transparent;
     color: #ffffff;
@@ -107,33 +101,33 @@ body {
     text-align: center;
 }
 
-.btn.answer.text-small {
+.em.answer.text-small {
     font-size: 22px;
 }
 
-.btn-answer.answer-1 {
+.em-answer.answer-1 {
     background: url('images/answer_bg_nh.png') no-repeat;
     background-size: cover;
 }
 
-.btn-answer.answer-1:hover {
+.em-answer.answer-1:hover {
     background-image: url('images/answer_bg_h.png');
 }
 
-.btn-answer.answer-2 {
+.em-answer.answer-2 {
     background: url('images/answer_bg_nh.png') no-repeat;
     background-size: cover;
 }
 
-.btn-answer.answer:hover {
+.em-answer.answer:hover {
     background-image: url('images/answer_bg_h.png');
 }
 
-.btn-answer.answer-3 {
+.em-answer.answer-3 {
     background: url('images/answer_bg_nh.png') no-repeat;
     background-size: cover;
 }
 
-.btn-answer.answer-3:hover {
+.em-answer.answer-3:hover {
     background-image: url('images/answer_bg_h.png');
 }
