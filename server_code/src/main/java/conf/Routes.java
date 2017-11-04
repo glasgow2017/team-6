@@ -12,14 +12,23 @@ public class Routes implements ApplicationRoutes {
     @Override
     public void init(Router router) {
 
-        router.GET().route("/login").globalFilters().with(LoginController::index);
-        router.POST().route("/login").globalFilters().with(LoginController::VerifyLogin);
-        router.GET().route("/logout").globalFilters().with(LoginController::Logout);
+        router.GET().route("/admin/login").globalFilters().with(LoginController::index);
+        router.POST().route("/admin/login").globalFilters().with(LoginController::VerifyLogin);
+        router.GET().route("/admin/logout").globalFilters().with(LoginController::Logout);
 
-        router.GET().route("/").with(HomeController::index);
-        router.GET().route("/home").with(HomeController::index);
+        router.GET().route("/quiz").globalFilters().with(QuizController::index);
+        router.GET().route("/").globalFilters().with(QuizController::index);
 
-        router.GET().route("/hello_world.json").with(ApplicationController::helloWorldJson);
+
+        router.GET().route("/admin/home").with(HomeController::index);
+
+        router.GET().route("/admin/participants").with(ParticipantsController::index);
+        router.GET().route("/admin/participants/reset").with(ParticipantsController::resetParticipants);
+
+        router.GET().route("/admin/questions").with(QuestionsController::index);
+
+
+        //router.GET().route("/hello_world.json").with(ApplicationController::helloWorldJson);
         
         ///////////////////////////////////////////////////////////////////////
         // Assets (pictures / javascript)
@@ -30,7 +39,7 @@ public class Routes implements ApplicationRoutes {
         ///////////////////////////////////////////////////////////////////////
         // Index / Catchall shows index page
         ///////////////////////////////////////////////////////////////////////
-        router.GET().route("/.*").globalFilters().with(HomeController::index);
+        router.GET().route("/.*").globalFilters().with(QuizController::index);
     }
 
 }

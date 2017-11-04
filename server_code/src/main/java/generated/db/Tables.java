@@ -4,6 +4,7 @@
 package generated.db;
 
 
+import generated.db.tables.QuizParticipants;
 import generated.db.tables.Users;
 
 import javax.annotation.Generated;
@@ -21,6 +22,11 @@ import javax.annotation.Generated;
 )
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Tables {
+
+    /**
+     * The table <code>code4good.quiz_participants</code>.
+     */
+    public static final QuizParticipants QUIZ_PARTICIPANTS = generated.db.tables.QuizParticipants.QUIZ_PARTICIPANTS;
 
     /**
      * The table <code>code4good.users</code>.
