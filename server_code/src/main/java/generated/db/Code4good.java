@@ -4,7 +4,9 @@
 package generated.db;
 
 
+import generated.db.tables.QuizAnswers;
 import generated.db.tables.QuizParticipants;
+import generated.db.tables.QuizQuestions;
 import generated.db.tables.Users;
 
 import java.util.ArrayList;
@@ -31,7 +33,7 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Code4good extends SchemaImpl {
 
-    private static final long serialVersionUID = 1813914479;
+    private static final long serialVersionUID = -1845937397;
 
     /**
      * The reference instance of <code>code4good</code>
@@ -39,9 +41,19 @@ public class Code4good extends SchemaImpl {
     public static final Code4good CODE4GOOD = new Code4good();
 
     /**
+     * The table <code>code4good.quiz_answers</code>.
+     */
+    public final QuizAnswers QUIZ_ANSWERS = generated.db.tables.QuizAnswers.QUIZ_ANSWERS;
+
+    /**
      * The table <code>code4good.quiz_participants</code>.
      */
     public final QuizParticipants QUIZ_PARTICIPANTS = generated.db.tables.QuizParticipants.QUIZ_PARTICIPANTS;
+
+    /**
+     * The table <code>code4good.quiz_questions</code>.
+     */
+    public final QuizQuestions QUIZ_QUESTIONS = generated.db.tables.QuizQuestions.QUIZ_QUESTIONS;
 
     /**
      * The table <code>code4good.users</code>.
@@ -73,7 +85,9 @@ public class Code4good extends SchemaImpl {
 
     private final List<Table<?>> getTables0() {
         return Arrays.<Table<?>>asList(
+            QuizAnswers.QUIZ_ANSWERS,
             QuizParticipants.QUIZ_PARTICIPANTS,
+            QuizQuestions.QUIZ_QUESTIONS,
             Users.USERS);
     }
 }

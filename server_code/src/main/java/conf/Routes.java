@@ -25,6 +25,9 @@ public class Routes implements ApplicationRoutes {
         router.GET().route("/admin/participants/reset").with(ParticipantsController::resetParticipants);
 
         router.GET().route("/admin/questions").with(QuestionsController::index);
+        router.GET().route("/admin/questions/create").with(QuestionsController::createForm);
+        router.POST().route("/admin/questions/create").with(QuestionsController::create);
+
 
 
         //router.GET().route("/hello_world.json").with(ApplicationController::helloWorldJson);
