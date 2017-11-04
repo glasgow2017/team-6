@@ -3,8 +3,6 @@ package services;
 import java.util.Base64;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-import generated.db.Tables.*;
-import generated.db.tables.pojos.Users;
 import generated.db.tables.records.UsersRecord;
 import org.jooq.*;
 import org.jooq.impl.DSL;

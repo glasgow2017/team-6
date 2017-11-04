@@ -4,6 +4,7 @@
 package generated.db;
 
 
+import generated.db.tables.QuizParticipants;
 import generated.db.tables.Users;
 
 import java.util.ArrayList;
@@ -30,12 +31,17 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Code4good extends SchemaImpl {
 
-    private static final long serialVersionUID = -430653988;
+    private static final long serialVersionUID = 1813914479;
 
     /**
      * The reference instance of <code>code4good</code>
      */
     public static final Code4good CODE4GOOD = new Code4good();
+
+    /**
+     * The table <code>code4good.quiz_participants</code>.
+     */
+    public final QuizParticipants QUIZ_PARTICIPANTS = generated.db.tables.QuizParticipants.QUIZ_PARTICIPANTS;
 
     /**
      * The table <code>code4good.users</code>.
@@ -67,6 +73,7 @@ public class Code4good extends SchemaImpl {
 
     private final List<Table<?>> getTables0() {
         return Arrays.<Table<?>>asList(
+            QuizParticipants.QUIZ_PARTICIPANTS,
             Users.USERS);
     }
 }

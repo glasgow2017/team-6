@@ -13,7 +13,7 @@ public class AuthFilter implements Filter {
         if (session == null || session.get("username") == null)
         {
             context.getFlashScope().error("Please log in.");
-            return Results.redirect("/login");
+            return Results.redirect("/admin/login");
         }
         return filterChain.next(context);
     }

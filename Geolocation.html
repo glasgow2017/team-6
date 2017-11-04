@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Geolocation</title>
+	</head>
+
+	<body onload = "myCountry()">
+
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script>
+
+		<!--// THIS WILL EXECUTE myCountry() ON LOAD OF PAGE AND STORE COUNTRY NAME IN VARIABLE country
+		<!--// 
+
+			function myCountry()
+			{
+				if (navigator.geolocation) 
+				{
+		    		navigator.geolocation.getCurrentPosition(getLocation);
+		    	}
+			}
+
+
+				<!--//found this at:
+				<!--//https://stackoverflow.com/questions/6747833/how-can-i-find-a-user-s-country-using-html5-geolocation
+				<!-- 
+			function getLocation(position)
+			{
+				 $.ajax('http://www.datasciencetoolkit.org/coordinates2politics/' 
+				 	+ position.coords.latitude 
+				 	+ ',' 
+				 	+ position.coords.longitude, {dataType: 'jsonp'})
+				 	.done(function(data, textStatus, jqXHR) 
+				 	{
+		    			if ( textStatus === 'success' ) 
+		    			{
+		      			var country = data[0].politics[0].name
+		      			var city 	= data[0].politics[3].name
+						}
+					});
+			};
+		
+		</script>
+
+	
+		
+
+	</body>
+</html>

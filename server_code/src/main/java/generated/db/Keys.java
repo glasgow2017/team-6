@@ -4,7 +4,9 @@
 package generated.db;
 
 
+import generated.db.tables.QuizParticipants;
 import generated.db.tables.Users;
+import generated.db.tables.records.QuizParticipantsRecord;
 import generated.db.tables.records.UsersRecord;
 
 import javax.annotation.Generated;
@@ -32,12 +34,14 @@ public class Keys {
     // IDENTITY definitions
     // -------------------------------------------------------------------------
 
+    public static final Identity<QuizParticipantsRecord, Long> IDENTITY_QUIZ_PARTICIPANTS = Identities0.IDENTITY_QUIZ_PARTICIPANTS;
     public static final Identity<UsersRecord, Integer> IDENTITY_USERS = Identities0.IDENTITY_USERS;
 
     // -------------------------------------------------------------------------
     // UNIQUE and PRIMARY KEY definitions
     // -------------------------------------------------------------------------
 
+    public static final UniqueKey<QuizParticipantsRecord> KEY_QUIZ_PARTICIPANTS_PRIMARY = UniqueKeys0.KEY_QUIZ_PARTICIPANTS_PRIMARY;
     public static final UniqueKey<UsersRecord> KEY_USERS_PRIMARY = UniqueKeys0.KEY_USERS_PRIMARY;
 
     // -------------------------------------------------------------------------
@@ -50,10 +54,12 @@ public class Keys {
     // -------------------------------------------------------------------------
 
     private static class Identities0 extends AbstractKeys {
+        public static Identity<QuizParticipantsRecord, Long> IDENTITY_QUIZ_PARTICIPANTS = createIdentity(QuizParticipants.QUIZ_PARTICIPANTS, QuizParticipants.QUIZ_PARTICIPANTS.ID);
         public static Identity<UsersRecord, Integer> IDENTITY_USERS = createIdentity(Users.USERS, Users.USERS.ID);
     }
 
     private static class UniqueKeys0 extends AbstractKeys {
+        public static final UniqueKey<QuizParticipantsRecord> KEY_QUIZ_PARTICIPANTS_PRIMARY = createUniqueKey(QuizParticipants.QUIZ_PARTICIPANTS, "KEY_quiz_participants_PRIMARY", QuizParticipants.QUIZ_PARTICIPANTS.ID);
         public static final UniqueKey<UsersRecord> KEY_USERS_PRIMARY = createUniqueKey(Users.USERS, "KEY_users_PRIMARY", Users.USERS.ID);
     }
 }

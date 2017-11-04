@@ -1,3 +1,4 @@
+
 hiiii
 
 .main-footer {
@@ -27,3 +28,34 @@ hiiii
     color: #B9B6AF;
     text-decoration: none;
 }
+
+
+
+.main-footer {
+    position: fixed;
+    font-family: "Lucida Console", sans-serif;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e89e0b;
+    color: black;
+    text-align: center;
+}
+
+.footer-links {
+    width: 300px;
+}
+
+.footer-link {
+    display: inline-block;
+}
+
+.footer-link.middle {
+
+}
+
+.footer-link:hover {
+    color: #B9B6AF;
+    text-decoration: none;
+}
+
