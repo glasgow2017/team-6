@@ -4,7 +4,6 @@
 package generated.db;
 
 
-import generated.db.tables.QuizAnswers;
 import generated.db.tables.QuizParticipants;
 import generated.db.tables.QuizQuestions;
 import generated.db.tables.Users;
@@ -33,17 +32,12 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Code4good extends SchemaImpl {
 
-    private static final long serialVersionUID = -1845937397;
+    private static final long serialVersionUID = -1233307550;
 
     /**
      * The reference instance of <code>code4good</code>
      */
     public static final Code4good CODE4GOOD = new Code4good();
-
-    /**
-     * The table <code>code4good.quiz_answers</code>.
-     */
-    public final QuizAnswers QUIZ_ANSWERS = generated.db.tables.QuizAnswers.QUIZ_ANSWERS;
 
     /**
      * The table <code>code4good.quiz_participants</code>.
@@ -85,7 +79,6 @@ public class Code4good extends SchemaImpl {
 
     private final List<Table<?>> getTables0() {
         return Arrays.<Table<?>>asList(
-            QuizAnswers.QUIZ_ANSWERS,
             QuizParticipants.QUIZ_PARTICIPANTS,
             QuizQuestions.QUIZ_QUESTIONS,
             Users.USERS);

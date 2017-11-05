@@ -32,30 +32,46 @@ import javax.validation.constraints.Size;
 @Table(name = "quiz_questions", schema = "code4good")
 public class QuizQuestions implements Serializable {
 
-    private static final long serialVersionUID = -1471040691;
+    private static final long serialVersionUID = 1685667070;
 
     private final Integer id;
     private final String  questionText;
-    private final Integer correctAnswerId;
     private final String  questionCountry;
+    private final String  ans1;
+    private final String  ans2;
+    private final String  ans3;
+    private final String  ans4;
+    private final Integer correctAnswer;
 
     public QuizQuestions(QuizQuestions value) {
         this.id = value.id;
         this.questionText = value.questionText;
-        this.correctAnswerId = value.correctAnswerId;
         this.questionCountry = value.questionCountry;
+        this.ans1 = value.ans1;
+        this.ans2 = value.ans2;
+        this.ans3 = value.ans3;
+        this.ans4 = value.ans4;
+        this.correctAnswer = value.correctAnswer;
     }
 
     public QuizQuestions(
         Integer id,
         String  questionText,
-        Integer correctAnswerId,
-        String  questionCountry
+        String  questionCountry,
+        String  ans1,
+        String  ans2,
+        String  ans3,
+        String  ans4,
+        Integer correctAnswer
     ) {
         this.id = id;
         this.questionText = questionText;
-        this.correctAnswerId = correctAnswerId;
         this.questionCountry = questionCountry;
+        this.ans1 = ans1;
+        this.ans2 = ans2;
+        this.ans3 = ans3;
+        this.ans4 = ans4;
+        this.correctAnswer = correctAnswer;
     }
 
     @Id
@@ -73,17 +89,45 @@ public class QuizQuestions implements Serializable {
         return this.questionText;
     }
 
-    @Column(name = "correct_answer_id", nullable = false, precision = 10)
-    @NotNull
-    public Integer getCorrectAnswerId() {
-        return this.correctAnswerId;
-    }
-
     @Column(name = "question_country", nullable = false, length = 255)
     @NotNull
     @Size(max = 255)
     public String getQuestionCountry() {
         return this.questionCountry;
+    }
+
+    @Column(name = "ans1", nullable = false, length = 16777215)
+    @NotNull
+    @Size(max = 16777215)
+    public String getAns1() {
+        return this.ans1;
+    }
+
+    @Column(name = "ans2", nullable = false, length = 16777215)
+    @NotNull
+    @Size(max = 16777215)
+    public String getAns2() {
+        return this.ans2;
+    }
+
+    @Column(name = "ans3", nullable = false, length = 16777215)
+    @NotNull
+    @Size(max = 16777215)
+    public String getAns3() {
+        return this.ans3;
+    }
+
+    @Column(name = "ans4", nullable = false, length = 16777215)
+    @NotNull
+    @Size(max = 16777215)
+    public String getAns4() {
+        return this.ans4;
+    }
+
+    @Column(name = "correct_answer", nullable = false, precision = 10)
+    @NotNull
+    public Integer getCorrectAnswer() {
+        return this.correctAnswer;
     }
 
     @Override
@@ -92,8 +136,12 @@ public class QuizQuestions implements Serializable {
 
         sb.append(id);
         sb.append(", ").append(questionText);
-        sb.append(", ").append(correctAnswerId);
         sb.append(", ").append(questionCountry);
+        sb.append(", ").append(ans1);
+        sb.append(", ").append(ans2);
+        sb.append(", ").append(ans3);
+        sb.append(", ").append(ans4);
+        sb.append(", ").append(correctAnswer);
 
         sb.append(")");
         return sb.toString();

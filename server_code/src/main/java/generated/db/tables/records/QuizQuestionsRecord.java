@@ -18,8 +18,8 @@ import javax.validation.constraints.Size;
 
 import org.jooq.Field;
 import org.jooq.Record1;
-import org.jooq.Record4;
-import org.jooq.Row4;
+import org.jooq.Record8;
+import org.jooq.Row8;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -36,9 +36,9 @@ import org.jooq.impl.UpdatableRecordImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 @Entity
 @Table(name = "quiz_questions", schema = "code4good")
-public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord> implements Record4<Integer, String, Integer, String> {
+public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord> implements Record8<Integer, String, String, String, String, String, String, Integer> {
 
-    private static final long serialVersionUID = -1644902890;
+    private static final long serialVersionUID = -640673568;
 
     /**
      * Setter for <code>code4good.quiz_questions.id</code>.
@@ -76,26 +76,10 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
     }
 
     /**
-     * Setter for <code>code4good.quiz_questions.correct_answer_id</code>.
-     */
-    public void setCorrectAnswerId(Integer value) {
-        set(2, value);
-    }
-
-    /**
-     * Getter for <code>code4good.quiz_questions.correct_answer_id</code>.
-     */
-    @Column(name = "correct_answer_id", nullable = false, precision = 10)
-    @NotNull
-    public Integer getCorrectAnswerId() {
-        return (Integer) get(2);
-    }
-
-    /**
      * Setter for <code>code4good.quiz_questions.question_country</code>.
      */
     public void setQuestionCountry(String value) {
-        set(3, value);
+        set(2, value);
     }
 
     /**
@@ -105,7 +89,91 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
     @NotNull
     @Size(max = 255)
     public String getQuestionCountry() {
+        return (String) get(2);
+    }
+
+    /**
+     * Setter for <code>code4good.quiz_questions.ans1</code>.
+     */
+    public void setAns1(String value) {
+        set(3, value);
+    }
+
+    /**
+     * Getter for <code>code4good.quiz_questions.ans1</code>.
+     */
+    @Column(name = "ans1", nullable = false, length = 16777215)
+    @NotNull
+    @Size(max = 16777215)
+    public String getAns1() {
         return (String) get(3);
+    }
+
+    /**
+     * Setter for <code>code4good.quiz_questions.ans2</code>.
+     */
+    public void setAns2(String value) {
+        set(4, value);
+    }
+
+    /**
+     * Getter for <code>code4good.quiz_questions.ans2</code>.
+     */
+    @Column(name = "ans2", nullable = false, length = 16777215)
+    @NotNull
+    @Size(max = 16777215)
+    public String getAns2() {
+        return (String) get(4);
+    }
+
+    /**
+     * Setter for <code>code4good.quiz_questions.ans3</code>.
+     */
+    public void setAns3(String value) {
+        set(5, value);
+    }
+
+    /**
+     * Getter for <code>code4good.quiz_questions.ans3</code>.
+     */
+    @Column(name = "ans3", nullable = false, length = 16777215)
+    @NotNull
+    @Size(max = 16777215)
+    public String getAns3() {
+        return (String) get(5);
+    }
+
+    /**
+     * Setter for <code>code4good.quiz_questions.ans4</code>.
+     */
+    public void setAns4(String value) {
+        set(6, value);
+    }
+
+    /**
+     * Getter for <code>code4good.quiz_questions.ans4</code>.
+     */
+    @Column(name = "ans4", nullable = false, length = 16777215)
+    @NotNull
+    @Size(max = 16777215)
+    public String getAns4() {
+        return (String) get(6);
+    }
+
+    /**
+     * Setter for <code>code4good.quiz_questions.correct_answer</code>.
+     */
+    public void setCorrectAnswer(Integer value) {
+        set(7, value);
+    }
+
+    /**
+     * Getter for <code>code4good.quiz_questions.correct_answer</code>.
+     */
+    @Column(name = "correct_answer", nullable = false, precision = 10)
+    @NotNull
+    public Integer getCorrectAnswer() {
+        return (Integer) get(7);
     }
 
     // -------------------------------------------------------------------------
@@ -121,23 +189,23 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
     }
 
     // -------------------------------------------------------------------------
-    // Record4 type implementation
+    // Record8 type implementation
     // -------------------------------------------------------------------------
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public Row4<Integer, String, Integer, String> fieldsRow() {
-        return (Row4) super.fieldsRow();
+    public Row8<Integer, String, String, String, String, String, String, Integer> fieldsRow() {
+        return (Row8) super.fieldsRow();
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public Row4<Integer, String, Integer, String> valuesRow() {
-        return (Row4) super.valuesRow();
+    public Row8<Integer, String, String, String, String, String, String, Integer> valuesRow() {
+        return (Row8) super.valuesRow();
     }
 
     /**
@@ -160,8 +228,8 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
      * {@inheritDoc}
      */
     @Override
-    public Field<Integer> field3() {
-        return QuizQuestions.QUIZ_QUESTIONS.CORRECT_ANSWER_ID;
+    public Field<String> field3() {
+        return QuizQuestions.QUIZ_QUESTIONS.QUESTION_COUNTRY;
     }
 
     /**
@@ -169,7 +237,39 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
      */
     @Override
     public Field<String> field4() {
-        return QuizQuestions.QUIZ_QUESTIONS.QUESTION_COUNTRY;
+        return QuizQuestions.QUIZ_QUESTIONS.ANS1;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Field<String> field5() {
+        return QuizQuestions.QUIZ_QUESTIONS.ANS2;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Field<String> field6() {
+        return QuizQuestions.QUIZ_QUESTIONS.ANS3;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Field<String> field7() {
+        return QuizQuestions.QUIZ_QUESTIONS.ANS4;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Field<Integer> field8() {
+        return QuizQuestions.QUIZ_QUESTIONS.CORRECT_ANSWER;
     }
 
     /**
@@ -192,8 +292,8 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
      * {@inheritDoc}
      */
     @Override
-    public Integer value3() {
-        return getCorrectAnswerId();
+    public String value3() {
+        return getQuestionCountry();
     }
 
     /**
@@ -201,7 +301,39 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
      */
     @Override
     public String value4() {
-        return getQuestionCountry();
+        return getAns1();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String value5() {
+        return getAns2();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String value6() {
+        return getAns3();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String value7() {
+        return getAns4();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Integer value8() {
+        return getCorrectAnswer();
     }
 
     /**
@@ -226,16 +358,7 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
      * {@inheritDoc}
      */
     @Override
-    public QuizQuestionsRecord value3(Integer value) {
-        setCorrectAnswerId(value);
-        return this;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public QuizQuestionsRecord value4(String value) {
+    public QuizQuestionsRecord value3(String value) {
         setQuestionCountry(value);
         return this;
     }
@@ -244,11 +367,60 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
      * {@inheritDoc}
      */
     @Override
-    public QuizQuestionsRecord values(Integer value1, String value2, Integer value3, String value4) {
+    public QuizQuestionsRecord value4(String value) {
+        setAns1(value);
+        return this;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public QuizQuestionsRecord value5(String value) {
+        setAns2(value);
+        return this;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public QuizQuestionsRecord value6(String value) {
+        setAns3(value);
+        return this;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public QuizQuestionsRecord value7(String value) {
+        setAns4(value);
+        return this;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public QuizQuestionsRecord value8(Integer value) {
+        setCorrectAnswer(value);
+        return this;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public QuizQuestionsRecord values(Integer value1, String value2, String value3, String value4, String value5, String value6, String value7, Integer value8) {
         value1(value1);
         value2(value2);
         value3(value3);
         value4(value4);
+        value5(value5);
+        value6(value6);
+        value7(value7);
+        value8(value8);
         return this;
     }
 
@@ -266,12 +438,16 @@ public class QuizQuestionsRecord extends UpdatableRecordImpl<QuizQuestionsRecord
     /**
      * Create a detached, initialised QuizQuestionsRecord
      */
-    public QuizQuestionsRecord(Integer id, String questionText, Integer correctAnswerId, String questionCountry) {
+    public QuizQuestionsRecord(Integer id, String questionText, String questionCountry, String ans1, String ans2, String ans3, String ans4, Integer correctAnswer) {
         super(QuizQuestions.QUIZ_QUESTIONS);
 
         set(0, id);
         set(1, questionText);
-        set(2, correctAnswerId);
-        set(3, questionCountry);
+        set(2, questionCountry);
+        set(3, ans1);
+        set(4, ans2);
+        set(5, ans3);
+        set(6, ans4);
+        set(7, correctAnswer);
     }
 }

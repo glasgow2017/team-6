@@ -35,7 +35,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class QuizQuestions extends TableImpl<QuizQuestionsRecord> {
 
-    private static final long serialVersionUID = 96882045;
+    private static final long serialVersionUID = 2092332989;
 
     /**
      * The reference instance of <code>code4good.quiz_questions</code>
@@ -61,14 +61,34 @@ public class QuizQuestions extends TableImpl<QuizQuestionsRecord> {
     public final TableField<QuizQuestionsRecord, String> QUESTION_TEXT = createField("question_text", org.jooq.impl.SQLDataType.CLOB.nullable(false), this, "");
 
     /**
-     * The column <code>code4good.quiz_questions.correct_answer_id</code>.
-     */
-    public final TableField<QuizQuestionsRecord, Integer> CORRECT_ANSWER_ID = createField("correct_answer_id", org.jooq.impl.SQLDataType.INTEGER.nullable(false), this, "");
-
-    /**
      * The column <code>code4good.quiz_questions.question_country</code>.
      */
     public final TableField<QuizQuestionsRecord, String> QUESTION_COUNTRY = createField("question_country", org.jooq.impl.SQLDataType.VARCHAR.length(255).nullable(false), this, "");
+
+    /**
+     * The column <code>code4good.quiz_questions.ans1</code>.
+     */
+    public final TableField<QuizQuestionsRecord, String> ANS1 = createField("ans1", org.jooq.impl.SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
+     * The column <code>code4good.quiz_questions.ans2</code>.
+     */
+    public final TableField<QuizQuestionsRecord, String> ANS2 = createField("ans2", org.jooq.impl.SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
+     * The column <code>code4good.quiz_questions.ans3</code>.
+     */
+    public final TableField<QuizQuestionsRecord, String> ANS3 = createField("ans3", org.jooq.impl.SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
+     * The column <code>code4good.quiz_questions.ans4</code>.
+     */
+    public final TableField<QuizQuestionsRecord, String> ANS4 = createField("ans4", org.jooq.impl.SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
+     * The column <code>code4good.quiz_questions.correct_answer</code>.
+     */
+    public final TableField<QuizQuestionsRecord, Integer> CORRECT_ANSWER = createField("correct_answer", org.jooq.impl.SQLDataType.INTEGER.nullable(false), this, "");
 
     /**
      * Create a <code>code4good.quiz_questions</code> table reference

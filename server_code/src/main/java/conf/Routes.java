@@ -27,6 +27,9 @@ public class Routes implements ApplicationRoutes {
         router.GET().route("/admin/questions").with(QuestionsController::index);
         router.GET().route("/admin/questions/create").with(QuestionsController::createForm);
         router.POST().route("/admin/questions/create").with(QuestionsController::create);
+        router.GET().route("/admin/questions/edit/{id}").with(QuestionsController::edit);
+        router.POST().route("/admin/questions/edit").with(QuestionsController::saveEdit);
+        router.GET().route("/admin/questions/delete/{id}").with(QuestionsController::delete);
 
 
 
