@@ -4,6 +4,7 @@ import generated.db.tables.records.QuizParticipantsRecord;
 import ninja.Context;
 import ninja.Result;
 import ninja.Results;
+import ninja.session.FlashScope;
 import ninja.session.Session;
 import services.ParticipantsService;
 
@@ -50,6 +51,13 @@ public class ParticipantsController {
     public Result resetParticipants()
     {
         return Results.html().template("/views/ParticipantsController/reset-participants.ftl.html");
+    }
+
+    public Result deleteAllParticipants(FlashScope flashScope)
+    {
+        participantsService.DeleteAllParticipants();
+        flashScope.success("Deleted all participant data.");
+        return Results.redirect("/admin/participants");
     }
 
 }

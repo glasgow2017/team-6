@@ -23,6 +23,7 @@ public class Routes implements ApplicationRoutes {
 
         router.GET().route("/admin/participants").with(ParticipantsController::index);
         router.GET().route("/admin/participants/reset").with(ParticipantsController::resetParticipants);
+        router.POST().route("/admin/participants/delete-all").with(ParticipantsController::deleteAllParticipants);
 
         router.GET().route("/admin/questions").with(QuestionsController::index);
         router.GET().route("/admin/questions/create").with(QuestionsController::createForm);

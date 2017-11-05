@@ -30,6 +30,13 @@ public class ParticipantsService {
     @Inject
     GEOIPService geoipService;
 
+    private boolean ParticipantExists(Long pId)
+    {
+        DSLContext create = DSL.using(dbService.GetDataSource(), SQLDialect.MYSQL);
+        long num = create.selectCount().from(QUIZ_PARTICIPANTS).where(QUIZ_PARTICIPANTS.ID.eq(pId)).fetchOne(0, long.class);
+        return num == 1;
+    }
+
     // Creates a record for this participant in the DB, and returns their ID.
     private long CreateParticipant(String ip)
     {
@@ -53,7 +60,7 @@ public class ParticipantsService {
 
     public long VerifyParticipantId(String participantID, String ip)
     {
-        if (participantID == null)
+        if (participantID == null || false == ParticipantExists(Long.parseLong(participantID)))
         {
             return CreateParticipant(ip);
         }
@@ -144,5 +151,11 @@ public class ParticipantsService {
         }
 
         return list;
+    }
+
+    public void DeleteAllParticipants()
+    {
+        DSLContext create = DSL.using(dbService.GetDataSource(), SQLDialect.MYSQL);
+        create.deleteFrom(QUIZ_PARTICIPANTS).where(QUIZ_PARTICIPANTS.ID.gt(new Long(0))).execute();
     }
 }

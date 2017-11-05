@@ -17,6 +17,8 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">Participation Statistics</h1>
 
+                    <#include "../layout/flash.ftl.html" />
+
                     <div class="row">
                         <span class="row"> Number of participants: ${numParticipants}</span>
                         <span class="row"> Number of countries: ${numCountries}</span>
@@ -36,8 +38,6 @@
                             <th>IP</th>
                             <th>Country</th>
                             <th>Correct Answers %</th>
-                            <th>View Answers</th>
-                            <th>Delete</th>
                             </thead>
                             <tbody>
                             <#list participantsList as participant>
@@ -48,8 +48,6 @@
                                 <td>${participant.ip}</td>
                                 <td>${participant.country}</td>
                                 <td>${participant.percentCorrectAnswers}%</td>
-                                <td>TODO</td>
-                                <td>TODO</td>
                             </tr>
                             </#list>
                             </tbody>
