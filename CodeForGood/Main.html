@@ -12,8 +12,20 @@
     <link rel="stylesheet" type="text/css" href="Footer.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <style>
+    .grad1 {
+        height: 100%;
+        background: black; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(black, #C0C0C0); /* For Safari*/
+        background: -o-linear-gradient(black, #C0C0C0); /* For Opera  */
+        background: -moz-linear-gradient(black, #C0C0C0); /* For Firefox */
+        background: linear-gradient(black, #C0C0C0); /* Standard syntax (must be last) */
+    }   
+    </style>
+
 </head>
-<body onload = "myCountry()">
+<body onload = "myCountry()" class = "grad1">
 <!-- Fill in the script-->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
@@ -70,6 +82,8 @@
 <section class="slide" id="menu">
     <!-- .slides-1 -->
     <div class="container">
+
+
         <div class="row">
         </div>
         <div>
