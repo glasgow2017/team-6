@@ -22,7 +22,12 @@
         background: -moz-linear-gradient(black, #C0C0C0); /* For Firefox */
         background: linear-gradient(black, #C0C0C0); /* Standard syntax (must be last) */
     }
-    </style>
+    img.flip:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+</style>
 
 </head>
 <body onload = "myCountry()" class = "grad1">
@@ -87,7 +92,7 @@
         <div class="row">
         </div>
         <div>
-            <img width="1150" height="350" class ="start-img flip" src="images/girlheader.jpg">
+            <img width="1150" height="350" class ="start-img" src="images/girlheader.jpg">
         </div>
 
             <!-- Dropdown to choose country -->
@@ -140,7 +145,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <a>
-                    <img class ="main-logo" width="200" height="410" src="images/woman.png">
+                    <img class ="flip main-logo" width="200" height="410" src="images/woman.png">
                 </a>
             </div>
             <div id="question-one" class="col-sm-6">
@@ -181,7 +186,7 @@
             <div class="col-sm-6">
 
                 <a>
-                    <img class ="main-logo" width="447" height="457" src="images/girl_school.png">
+                    <img class ="flip main-logo" width="447" height="457" src="images/girl_school.png">
                 </a>
             </div>
             <div id="question-two" class="col-sm-6">
