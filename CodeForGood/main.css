@@ -8,7 +8,7 @@ body {
     background-color: gray;
     font-family: 'Filson', sans-serif;
 }
-/*
+
 .main-header {
     background-color: black;
 
@@ -55,6 +55,9 @@ body {
     padding: 5px 22px 5px 5px;
     background-repeat: no-repeat;
     background-position: center right;
+    position: relative;
+    left: 500px;
+    bottom: 750px;
 }
 
 .language-select option {
@@ -76,7 +79,7 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
-*/
+
 
 .question {
     font-size: 30px;
@@ -151,6 +154,7 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin: 20px auto;
 }
 
 /* Dropdown button on hover and focus */
