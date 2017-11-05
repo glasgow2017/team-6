@@ -21,7 +21,7 @@
         background: -o-linear-gradient(black, #C0C0C0); /* For Opera  */
         background: -moz-linear-gradient(black, #C0C0C0); /* For Firefox */
         background: linear-gradient(black, #C0C0C0); /* Standard syntax (must be last) */
-    }   
+    }
     </style>
 
 </head>
@@ -29,6 +29,7 @@
 <!-- Fill in the script-->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
+<!--//Geolocation portion starts here -->
 
     <!-- gets users coordinates and returns country -->
     function myCountry()
@@ -55,9 +56,8 @@
     };
 
 </script>
-<!-- preload hover assets -->
 
-<!-- main header -->
+<!--//Main header data -->
 <header class="main-header">
     <div class="container" style="background-color: black;">
         <div class="row">
@@ -69,7 +69,7 @@
             <div class="col-sm6 xs-hidden header-center">
                 <h1 class = "intro">
                     <br>
-                    <span class="intro-highlight"> Equal Measures + Code For Good </span>
+                    <span class="intro-highlight"> Equal Measures: Time is Running Out </span>
                 </h1>
             </div>
             <div class="col-sm-3 col-xs-9 header-top">
@@ -89,7 +89,6 @@
         </div>
     </div>
 </header>
-<!--/.main header -->
 
 <!--.slide-wrapper-->
 <section class="slide" id="menu">
@@ -100,7 +99,7 @@
         <div class="row">
         </div>
         <div>
-            <img width="1150" height="350" class ="start-img" src="images/girlheader.jpg">
+            <img width="1150" height="350" class ="start-img flip" src="images/girlheader.jpg">
         </div>
 
             <!-- Dropdown to choose country -->
@@ -227,8 +226,19 @@
                 </p>
             </div>
         </div>
-        <div>
-            extra &nbsp;&nbsp; space
+        <div id="share-buttons">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/Equal2030/" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/company/13445896/" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/Equal2030" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+            </a>
         </div>
 
     </div>
