@@ -84,7 +84,7 @@ body {
 
 .question {
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: normal;
     line-height: 1.00;
     text-align: center;
     color: white;
@@ -95,7 +95,7 @@ body {
 .em-answer {
     cursor: pointer;
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     width: 510px;
     max-width: 100%;
     padding: 24px 0;
@@ -148,7 +148,7 @@ body {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: black;
+    background-color: #B22222;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -192,7 +192,6 @@ img.flip:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
-
 #share-buttons img {
     width: 20px;
     padding: 2px;
