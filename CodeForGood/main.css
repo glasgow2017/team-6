@@ -3,12 +3,20 @@
 #preload {
     display: none;
 }
+#grad1 {
+    height: 200px;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, #C0C0C0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #C0C0C0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #C0C0C0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, #C0C0C0); /* Standard syntax (must be last) */
+}
 
 body {
     background-color: gray;
     font-family: 'Filson', sans-serif;
 }
-/*
+
 .main-header {
     background-color: black;
 
@@ -29,7 +37,7 @@ body {
 }
 
 .intro-highlight {
-    font-size: 32px;
+    font-size: 50px;
     line-height: 1.0;
     color: gray;
     background: no-repeat;
@@ -55,6 +63,9 @@ body {
     padding: 5px 22px 5px 5px;
     background-repeat: no-repeat;
     background-position: center right;
+    position: relative;
+    left: 500px;
+    bottom: 750px;
 }
 
 .language-select option {
@@ -76,14 +87,15 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
-*/
+
 
 .question {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: lighter;
+    font-family: 'Filson', sans-serif;
     line-height: 1.00;
     text-align: center;
-    color: red;
+    color: dimgrey;
     margin: 80px 0 36px;
 }
 
@@ -144,12 +156,13 @@ body {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: gray;
+    background-color: black;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin: 20px auto;
 }
 
 /* Dropdown button on hover and focus */
@@ -184,3 +197,6 @@ body {
 .dropdown-content a:hover{background-color: #f1f1f1};
 
 .show {display: block;}
+
+.show {display: block;}
+
