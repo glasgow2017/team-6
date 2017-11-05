@@ -30,6 +30,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
 
+    <!-- gets users coordinates and returns country -->
     function myCountry()
     {
         if (navigator.geolocation)
@@ -102,6 +103,7 @@
             </div>
         </div>
 
+        <!-- send to first question -->
         <div class="em-answer" style="color: black;"> <a href="#Q1"> Let's explore some statistics</a> </div>
         <div class="row">
             <div class="col-md-5"></div>
@@ -129,14 +131,21 @@
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h2 class="question xs-show-block">QUESTION 1</h2>
-            </div>
-            <div id="question-one" class="col-sm-6">
-                <h3 class="question xs-hidden" id="Q1">
+        <div class = "row">
+            <div class="col-sm-12 text-center">
+                <h3 class="question xs-hidden" id="Q1">Question 1<br>
                     Of these countries, which has the highest portion of female to male ratio in parliament?
                 </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <a>
+                    <img class ="main-logo" width="200" height="410" src="images/woman.png">
+                </a>
+            </div>
+            <div id="question-one" class="col-sm-6">
+
                 <div class="em-answer answer-1" data-answer="Answer1" data-correct="false">
                     <a href="#Q2">United Kingdom</a>
                 </div>
@@ -154,8 +163,8 @@
     </div>
 </section>
 <!--/.sledes-3-->
-<section class="slide" id="wrapper">
-    <div class="container" id="div1">
+<section class="slide">
+    <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <p class="p-18">
@@ -165,11 +174,19 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3 class="question xs-hidden" id="Q2">QUESTION 2<br>What percentage of Sengalese women are literate?</h3>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-6">
-                <h2 class="question xs-show-block">QUESTION 2</h2>
+
+                <a>
+                    <img class ="main-logo" width="447" height="457" src="images/girl_school.png">
+                </a>
             </div>
             <div id="question-two" class="col-sm-6">
-                <h3 class="question xs-hidden" id="Q2">What percentage of Sengalese women are literate?</h3>
+
                 <div class="em-answer answer-1" data-answer="Answer1" data-correct="true">
                     <a href="#LP">34%</a>
                 </div>
@@ -184,19 +201,22 @@
                 </div>
             </div>
         </div>
+        <!--<div class="row">
+            <div class="col-sm-6">
+
+            </div>
+
+        </div>-->
     </div>
-    <div class="container" id="div2">
-        <a href="http://www.equalmeasures2030.org/">
-            <img class ="main-logo" width="200" height="150" src="http://www.equalmeasures2030.org/wp-content/uploads/2017/10/em2030.jpg">
-        </a>
-    </div>
+
 </section>
 <!--/.sledes-3-->
 <!--.slides-4-->
 <secion class="slides">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-12">
                 <h2 class="question xs-hidden" id="LP">Results</h2>
                 <p>
                     You got 50% of the answers right. Congratulations.
@@ -210,21 +230,35 @@
         </div>
 
     </div>
+
+</secion>
+<!--/.embed awareness video -->
+<section class="slide">
+    <section class="slide">
+
+    <div class="container">
+        <div>
+           <h2 class="col-sm-12 text-center">Learn more:</h2>
+        </div>
+        <div class="col-md-0">
+    </div>
+
+        <div>
+            <div class="col-md-12 text-center">
+                <iframe src="https://www.youtube.com/embed/1e8xgF0JtVg" width="640" height="360" frameborder="0" gesture="media" allowfullscreen></iframe>
+            <div class="col-md-0">
+            </div>
+            </div>
+        </div>
+
+    </div>
 </secion>
 <!--/.slides-4-->
 <!--/.sliders-wrapper>
-<!--/.sledes-4-->
-<section class="slide">
-    <section class="slide">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-        <iframe src="https://www.youtube.com/embed/1e8xgF0JtVg" width="640" height="360" frameborder="0" gesture="media" allowfullscreen></iframe>
-        <div class="col-md-0">
-    </div>
+=======
     <!-- /video -->
 </div>
-<!-- /video-wrapper --> 
+
 
 
 </section>
@@ -251,6 +285,8 @@
         menu: '#menu'
     });
 </script>
+
+<!-- dropdown function -->
 <script>
  function myDropdown() {
         document.getElementById("myDropdown").classList.toggle("show");
