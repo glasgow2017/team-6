@@ -139,7 +139,7 @@ body {
 */
 body {
     background-color: gray;
-    font-family: 'Filson', sans-serif;
+    font-family: 'Impact', sans-serif; 
 }
 
 .main-header {
@@ -164,7 +164,7 @@ body {
 }
 
 .intro-highlight {
-    font-size: 32px;
+    font-size: 50px;
     line-height: 1.0;
     color: gray;
     background: no-repeat;
