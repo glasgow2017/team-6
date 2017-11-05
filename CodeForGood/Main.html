@@ -222,7 +222,8 @@
                 <p>
                     You got 50% of the answers right. Congratulations.
                     Do you want to make it 100% next time?
-                    Try to learn more and thank you for participating.
+                    Try to learn more with this amazing video and thank you for participating.
+                    <a href="#Stat">Or learn more looking at some amazing stats. </a>
                 </p>
             </div>
         </div>
@@ -254,13 +255,49 @@
         </div>
     </div>
 
-    <div>
+    <div class="container">
         <div class="col-md-12 text-center">
             <iframe src="https://www.youtube.com/embed/1e8xgF0JtVg" width="640" height="360" frameborder="0" gesture="media" allowfullscreen></iframe>
         </div>
         <div class="col-md-0">
         </div>
     </div>
+</section>
+
+<section class="slide">
+    <div class="container" >
+        <div class="row" id="Stat">
+            <div class="col-md-12 text-center" id="piechart"></div>
+
+
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+            <script type="text/javascript">
+                // Load google charts
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+
+                // Draw the chart and set the chart values
+                function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                        ['Married Age', 'Percent of marriages'],
+                        ['younger than 12', 8],
+                        ['12-20', 2],
+                        ['21-35', 4],
+                        ['35+', 2]
+                    ]);
+
+                    // Optional; add a title and set the width and height of the chart
+                    var options = {'title':'Percentage of marriages at ages:', 'width':550, 'height':400};
+
+                    // Display the chart inside the <div> element with id="piechart"
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                    chart.draw(data, options);
+                }
+            </script>
+        </div>
+    </div>
+
 </section>
 
 <!--/.slides-4-->
@@ -285,7 +322,7 @@
 
 <script>
     $('#fullpage').fullpage({
-        anchors: ['Q1', 'Q2', 'LP'],
+        anchors: ['Q1', 'Q2', 'LP', 'Stat'],
         menu: '#menu'
     });
 </script>
