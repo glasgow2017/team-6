@@ -124,7 +124,7 @@ body {
     background-size: cover;
 }
 
-.em-answer.answer:hover {
+.em-answer.answer-2:hover {
     background-image: url('images/answer_bg_h.png');
 }
 
