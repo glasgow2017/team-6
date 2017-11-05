@@ -1,0 +1,26 @@
+Project Title
+
+One Paragraph of project description goes here
+
+Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+Prerequisites
+
+This was build in IntellJ and uses those features
+You need gradle
+You need jellyRun
+You need mySQL
+
+Everything used for setting up the server (including all Java and HTML files) are in the
+server_code
+Folder
+
+Since we didn't finish on time with combining all html features with the server file, 
+since we worked on them seperately
+you can find the website template under
+CodeForGood
+Downloading this you can run the website from anywhere as long as you have a web browser
+
+The rest of the files are old junk needed for getting started. 
