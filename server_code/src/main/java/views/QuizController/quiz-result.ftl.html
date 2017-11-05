@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<#assign title="Code4Good Quiz Results" />
+<#include "../layout/head.ftl.html" />
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h1>Thank you for participating!</h1>
+
+                    <br><br>
+                    <div>You got <b>${numCorrect}</b> out of <b>${numQuestions}</b> questions correct! Click <a href="/">here</a> if you want to try again</div>
+                    <br><br>
+
+                    <h3>Please take the time to watch our video below</h3>
+
+                    <br>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1e8xgF0JtVg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<#include "../layout/scripts.ftl.html" />
+
+</body>
+
+</html>
+

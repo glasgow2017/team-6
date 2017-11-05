@@ -5,3 +5,4 @@ server_code/.DS_Store
 *.iml
 *.DS_Store
 .DS_Store
+.gradle/*
