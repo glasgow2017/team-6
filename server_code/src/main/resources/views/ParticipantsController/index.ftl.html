@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<#assign title="Participation Statistics" />
+<#include "../layout/head.ftl.html" />
+
+<body>
+
+<div id="wrapper">
+
+    <#include "../navigation/navigation.ftl.html" />
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Participation Statistics</h1>
+
+                    <#include "../layout/flash.ftl.html" />
+
+                    <div class="row">
+                        <span class="row"> Number of participants: ${numParticipants}</span>
+                        <span class="row"> Number of countries: ${numCountries}</span>
+                        <span class="row"> % Correct Answers: ${percentCorrect}%</span>
+                        <span class="row"> Average Age: ${averageAge}</span>
+                        <span class="row"> Men: ${percentMen}%</span>
+                        <span class="row"> Women: ${percentWomen}%</span>
+                        <span class="row"> Other/Unspecified: ${percentOther}%</span>
+                    </div>
+
+                    <div class="row">
+                        <table class="table table-striped">
+                            <thead>
+                            <th>ID</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>IP</th>
+                            <th>Country</th>
+                            <th>Correct Answers %</th>
+                            </thead>
+                            <tbody>
+                            <#list participantsList as participant>
+                            <tr>
+                                <td>${participant.id}</td>
+                                <td>${participant.age}</td>
+                                <td>${participant.sex}</td>
+                                <td>${participant.ip}</td>
+                                <td>${participant.country}</td>
+                                <td>${participant.percentCorrectAnswers}%</td>
+                            </tr>
+                            </#list>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <a class="btn btn-danger" href="/admin/participants/reset">Reset Participant Data</a>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<#include "../layout/scripts.ftl.html" />
+
+</body>
+
+</html>

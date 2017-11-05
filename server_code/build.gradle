@@ -12,8 +12,11 @@ buildscript {
 		classpath "org.akhikhl.gretty:gretty:+"
 		classpath "org.jooq:jooq-codegen:3.9.1"
 		classpath "mysql:mysql-connector-java:5.1.42"
+		classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
 	}
 }
+
+apply plugin: 'com.github.johnrengelman.shadow'
 
 allprojects{
 	/** Repositories declaration */
@@ -58,6 +61,11 @@ gretty {
 	scanInterval = 1
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'ninja.standalone.NinjaJetty'
+    }
+}
 
 Properties ninjaProps = new Properties()
 ninjaProps.load(new FileInputStream("src/main/java/conf/application.conf"))
