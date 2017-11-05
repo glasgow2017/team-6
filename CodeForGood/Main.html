@@ -120,15 +120,12 @@
         </div>
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h3 class="question xs-hidden"><br>Do you know the numbers numbers?</h3>
+                <h3 class="intro-highlight xs-hidden" style="color: white"><br><b>Do you know the numbers numbers?</b></br></h3>
             </div>
         </div>
         <!-- send to first question -->
 
-        <div class="em-answer" style="color: black;"> <a href="#Q1" style = "color: white"> Let's explore some statistics</a> </div>
-
-
-        <div class="em-answer" style="color: black;"> <a href="#Q1"> Let's explore!</a> </div>
+        <div class="em-answer" style="color: black;"> <a href="#Q1" style = "color: white" > Let's explore some statistics</a> </div>
 
     </div>
 </section>
@@ -230,13 +227,17 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="question xs-hidden" id="LP">Results</h2>
+                <h2 class="intro-highlight xs-hidden text-center" style="color: white" ><br><b>Results</b></br></h2>
+            <div class="col-sm-0">
+
+                <div class="bord text-center">
                 <p>
-                    You got 50% of the answers right. Congratulations.
-                    Do you want to make it 100% next time?
-                    Try to learn more with this amazing video and thank you for participating.
+                    You got 50% of the answers right. Congratulations. <br/>
+                    Try another country quiz?<br/>
+                    Click the video to learn more. Thank you.<br/>
                     <a href="#Stat">Or learn more looking at some amazing stats. </a>
                 </p>
+            </div>
             </div>
         </div>
         <div id="share-buttons">
@@ -274,60 +275,6 @@
     </div>
 </section>
 
-<section class="slide">
-    <div class="container" >
-        <div class="row" id="Stat">
-            <div class="col-md-12 text-center" id="piechart"></div>
-
-
-            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-            <script type="text/javascript">
-                // Load google charts
-                google.charts.load('current', {'packages':['corechart']});
-                google.charts.setOnLoadCallback(drawChart);
-
-                // Draw the chart and set the chart values
-                function drawChart() {
-                    var data = google.visualization.arrayToDataTable([
-                        ['Married Age', 'Percent of marriages'],
-                        ['younger than 12', 8],
-                        ['12-20', 2],
-                        ['21-35', 4],
-                        ['35+', 2]
-                    ]);
-
-                    // Optional; add a title and set the width and height of the chart
-                    var options = {'title':'Percentage of marriages at ages:', 'width':550, 'height':400};
-
-                    // Display the chart inside the <div> element with id="piechart"
-                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                    chart.draw(data, options);
-                }
-            </script>
-        </div>
-    </div>
-
-</section>
-
-<!--/.slides-4-->
-<!--/.sliders-wrapper>
-</section>
-<!--/.sledes-3-->
-<!--/.sliders-wrapper>
-
-<footer class="main-footer container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="footer-links">
-                <a class="footer-link" href="http://www.equalmeasures2030.org/#about-us">About Us</a>
-                <a class="footer-link middle" href="http://www.equalmeasures2030.org/#get-involved">Get Involved</a>
-                <a class="footer-link" href="http://www.equalmeasures2030.org/#contact-us">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- /.main-footer -->
 
 <script>
     $('#fullpage').fullpage({

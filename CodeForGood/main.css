@@ -217,3 +217,7 @@ img.flip:hover {
 
 .show {display: block;}
 
+.bord {
+    border:none;
+    margin: auto;
+}
