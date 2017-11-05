@@ -84,7 +84,7 @@ body {
 
 .question {
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: normal;
     line-height: 1.00;
     text-align: center;
     color: white;
@@ -148,7 +148,7 @@ body {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: black;
+    background-color: #B22222;
     color: white;
     padding: 16px;
     font-size: 16px;
