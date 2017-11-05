@@ -196,6 +196,13 @@ body {
 /* changing color of links on hover*/
 .dropdown-content a:hover{background-color: #f1f1f1};
 
+#share-buttons img {
+    width: 20px;
+    padding: 2px;
+    border: 0;
+    display: inline;
+}
+
 .show {display: block;}
 
 .show {display: block;}
