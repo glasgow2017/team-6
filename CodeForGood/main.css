@@ -55,6 +55,9 @@ body {
     padding: 5px 22px 5px 5px;
     background-repeat: no-repeat;
     background-position: center right;
+    position: relative;
+    left: 500px;
+    bottom: 750px;
 }
 
 .language-select option {
