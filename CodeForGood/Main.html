@@ -18,6 +18,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
 
+    <!-- gets users coordinates and returns country -->
     function myCountry()
     {
         if (navigator.geolocation)
@@ -88,6 +89,7 @@
             </div>
         </div>
 
+        <!-- send to first question -->
         <div class="em-answer" style="color: black;"> <a href="#Q1"> Let's explore some statistics</a> </div>
         <div class="row">
             <div class="col-md-5"></div>
@@ -197,9 +199,7 @@
 
     </div>
 </secion>
-<!--/.slides-4-->
-<!--/.sliders-wrapper>
-<!--/.sledes-4-->
+<!--/.embed awareness video -->
 <section class="slide">
     <section class="slide">
     <div class="container">
@@ -210,7 +210,6 @@
     </div>
     <!-- /video -->
 </div>
-<!-- /video-wrapper --> 
 
 
 </section>
@@ -237,6 +236,8 @@
         menu: '#menu'
     });
 </script>
+
+<!-- dropdown function -->
 <script>
  function myDropdown() {
         document.getElementById("myDropdown").classList.toggle("show");
