@@ -119,6 +119,40 @@
 
 <#include "../layout/scripts.ftl.html" />
 
+<script type="text/javascript">
+
+    function myCountry()
+    {
+        if (navigator.geolocation)
+        {
+            navigator.geolocation.getCurrentPosition(getLocation);
+        }
+    }
+    function getLocation(position)
+    {
+        $.ajax('http://www.datasciencetoolkit.org/coordinates2politics/'
+            + position.coords.latitude
+            + ','
+            + position.coords.longitude, {dataType: 'jsonp'})
+            .done(function(data, textStatus, jqXHR)
+            {
+                if ( textStatus === 'success' )
+                {
+                    var country = data[0].politics[0].name
+                    var city 	= data[0].politics[3].name
+
+                    alert(country);
+                    $( "#country" ).val( country );
+                }
+            });
+    };
+
+    $( document ).ready(function() {
+        myCountry();
+    });
+
+</script>
+
 </body>
 
 </html>
