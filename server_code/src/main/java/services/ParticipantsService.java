@@ -158,4 +158,17 @@ public class ParticipantsService {
         DSLContext create = DSL.using(dbService.GetDataSource(), SQLDialect.MYSQL);
         create.deleteFrom(QUIZ_PARTICIPANTS).where(QUIZ_PARTICIPANTS.ID.gt(new Long(0))).execute();
     }
+
+    public void UpdateParticipant(Long pId, int age, String sex, String ip, String country, int percentCorrect)
+    {
+        DSLContext create = DSL.using(dbService.GetDataSource(), SQLDialect.MYSQL);
+        QuizParticipantsRecord record = create.selectFrom(QUIZ_PARTICIPANTS).where(QUIZ_PARTICIPANTS.ID.eq(pId)).fetchOne();
+
+        record.setAge(age);
+        record.setSex(sex);
+        record.setIp(ip);
+        record.setCountry(country);
+        record.setPercentCorrectAnswers(percentCorrect);
+        record.store();
+    }
 }

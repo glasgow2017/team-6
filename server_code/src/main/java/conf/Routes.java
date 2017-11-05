@@ -17,6 +17,7 @@ public class Routes implements ApplicationRoutes {
 
         router.GET().route("/quiz").globalFilters().with(QuizController::index);
         router.GET().route("/").globalFilters().with(QuizController::index);
+        router.POST().route("/quiz-submit").globalFilters().with(QuizController::QuizSubmit);
 
 
         router.GET().route("/admin/home").with(HomeController::index);
