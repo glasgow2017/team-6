@@ -196,6 +196,10 @@ body {
 /* changing color of links on hover*/
 .dropdown-content a:hover{background-color: #f1f1f1};
 
+img.flip:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 #share-buttons img {
     width: 20px;
     padding: 2px;
