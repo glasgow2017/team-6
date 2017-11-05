@@ -41,6 +41,15 @@ dependencies{
 	testCompile "org.ninjaframework:ninja-test-utilities:${ninjaVersion}"
 }
 
+sourceSets {
+	main {
+		resources {
+			srcDirs "src/main/resources", "src/main/java"
+			exclude "**/*.java"
+		}
+	}
+}
+
 def debugArgs = []
 if (gradle.startParameter.initScripts) {
 	def line = file(gradle.startParameter.initScripts[0]).readLines().findAll({x -> x ==~ /.*-agentlib:jdwp=.*/ })[0]
