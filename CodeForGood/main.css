@@ -3,14 +3,7 @@
 #preload {
     display: none;
 }
-#grad1 {
-    height: 200px;
-    background: black; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(black, #C0C0C0); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(black, #C0C0C0); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(black, #C0C0C0); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(black, #C0C0C0); /* Standard syntax (must be last) */
-}
+
 
 body {
     background-color: gray;
@@ -53,7 +46,7 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    color: #ffffff;
+    color: gray;
     font-size: 18px;
     font-weight: bold;
     line-height: 1;
@@ -64,8 +57,8 @@ body {
     background-repeat: no-repeat;
     background-position: center right;
     position: relative;
-    left: 500px;
-    bottom: 750px;
+    left: 650px;
+    bottom: 160px;
 }
 
 .language-select option {
@@ -90,12 +83,11 @@ body {
 
 
 .question {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: lighter;
-    font-family: 'Filson', sans-serif;
     line-height: 1.00;
     text-align: center;
-    color: dimgrey;
+    color: white;
     margin: 80px 0 36px;
 }
 
@@ -132,7 +124,7 @@ body {
     background-size: cover;
 }
 
-.em-answer.answer:hover {
+.em-answer.answer-2:hover {
     background-image: url('images/answer_bg_h.png');
 }
 
@@ -209,6 +201,20 @@ img.flip:hover {
 }
 
 .show {display: block;}
+
+/* make two divs next to each other*/
+#wrapper {
+    border: 1px solid blue;
+}
+#div1 {
+    display: inline-block;
+}
+
+#div2 {
+    display: inline-block;
+}
+
+
 
 .show {display: block;}
 
