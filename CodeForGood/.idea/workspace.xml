@@ -14,33 +14,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="151" column="14" lean-forward="true" selection-start-line="151" selection-start-column="14" selection-end-line="151" selection-end-column="14" />
+            <state relative-caret-position="256">
+              <caret line="119" column="65" lean-forward="false" selection-start-line="119" selection-start-column="65" selection-end-line="119" selection-end-column="65" />
               <folding>
-                <element signature="e#7054#7060#0" expanded="true" />
-                <element signature="e#7060#7066#0" expanded="true" />
-                <marker date="1509871865581" expanded="true" signature="7132:7637" ph="..." />
-                <marker date="1509871865581" expanded="true" signature="7684:8157" ph="..." />
-                <marker date="1509871865581" expanded="true" signature="7706:8147" ph="..." />
-                <marker date="1509871865581" expanded="true" signature="7738:8136" ph="..." />
-                <marker date="1509871865581" expanded="true" signature="7777:8121" ph="..." />
-                <marker date="1509871865581" expanded="true" signature="8190:8297" ph="..." />
-                <marker date="1509871865581" expanded="true" signature="8220:8286" ph="{&quot;menu&quot;: '##menu'...}" />
-                <marker date="1509871865581" expanded="true" signature="8306:8876" ph="..." />
-                <marker date="1509871865581" expanded="true" signature="8331:8410" ph="{...}" />
+                <element signature="e#7298#7304#0" expanded="true" />
+                <element signature="e#7304#7310#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="girl_power.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/girl_power.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="175" column="18" lean-forward="true" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
+            <state relative-caret-position="275">
+              <caret line="86" column="19" lean-forward="true" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -59,8 +57,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/two_divs.js" />
-        <option value="$PROJECT_DIR$/Main.html" />
         <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/Main.html" />
       </list>
     </option>
   </component>
@@ -102,6 +100,11 @@
             <path>
               <item name="CodeForGood" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodeForGood" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodeForGood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeForGood" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -138,12 +141,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509869011943</updated>
-      <workItem from="1509869013536" duration="2889000" />
+      <workItem from="1509869013536" duration="4443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2889000" />
+    <option name="totallyTimeSpent" value="4443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
@@ -186,31 +189,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="151" column="14" lean-forward="true" selection-start-line="151" selection-start-column="14" selection-end-line="151" selection-end-column="14" />
-          <folding>
-            <element signature="e#7054#7060#0" expanded="true" />
-            <element signature="e#7060#7066#0" expanded="true" />
-            <marker date="1509871865581" expanded="true" signature="7132:7637" ph="..." />
-            <marker date="1509871865581" expanded="true" signature="7684:8157" ph="..." />
-            <marker date="1509871865581" expanded="true" signature="7706:8147" ph="..." />
-            <marker date="1509871865581" expanded="true" signature="7738:8136" ph="..." />
-            <marker date="1509871865581" expanded="true" signature="7777:8121" ph="..." />
-            <marker date="1509871865581" expanded="true" signature="8190:8297" ph="..." />
-            <marker date="1509871865581" expanded="true" signature="8220:8286" ph="{&quot;menu&quot;: '##menu'...}" />
-            <marker date="1509871865581" expanded="true" signature="8306:8876" ph="..." />
-            <marker date="1509871865581" expanded="true" signature="8331:8410" ph="{...}" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/images/girl_mother.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/girl_school.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/girl_power.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="175" column="18" lean-forward="true" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
+        <state relative-caret-position="275">
+          <caret line="86" column="19" lean-forward="true" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/woman.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="119" column="65" lean-forward="false" selection-start-line="119" selection-start-column="65" selection-end-line="119" selection-end-column="65" />
+          <folding>
+            <element signature="e#7298#7304#0" expanded="true" />
+            <element signature="e#7304#7310#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
