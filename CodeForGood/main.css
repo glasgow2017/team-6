@@ -180,7 +180,7 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    color: #ffffff;
+    color: white;
     font-size: 18px;
     font-weight: bold;
     line-height: 1;
@@ -190,6 +190,11 @@ body {
     padding: 5px 22px 5px 5px;
     background-repeat: no-repeat;
     background-position: center right;
+    position: relative;
+    bottom: 630px;
+    left: 600px;
+
+
 }
 
 .language-select option {
