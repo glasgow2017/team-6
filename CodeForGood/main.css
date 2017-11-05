@@ -184,3 +184,15 @@ body {
 .dropdown-content a:hover{background-color: #f1f1f1};
 
 .show {display: block;}
+
+/* make two divs next to each other*/
+#wrapper {
+    border: 1px solid blue;
+}
+#div1 {
+    display: inline-block;
+}
+
+#div2 {
+    display: inline-block;
+}

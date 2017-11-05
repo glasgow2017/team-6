@@ -140,8 +140,8 @@
     </div>
 </section>
 <!--/.sledes-3-->
-<section class="slide">
-    <div class="container">
+<section class="slide" id="wrapper">
+    <div class="container" id="div1">
         <div class="row">
             <div class="col-md-12 text-center">
                 <p class="p-18">
@@ -157,22 +157,47 @@
             <div id="question-two" class="col-sm-6">
                 <h3 class="question xs-hidden" id="Q2">What percentage of Sengalese women are literate?</h3>
                 <div class="em-answer answer-1" data-answer="Answer1" data-correct="true">
-                    <a href="#Q3">34%</a>
+                    <a href="#LP">34%</a>
                 </div>
                 <div class="em-answer answer-2" data-answer="Answer2" data-correct="false">
-                    <a href="#Q3">15%</a>
+                    <a href="LP">15%</a>
                 </div>
                 <div class="em-answer answer-3" data-answer="Answer3" data-correct="false">
-                    <a href="#Q3">76%</a>
+                    <a href="#LP">76%</a>
                 </div>
                 <div class="em-answer answer-4" data-answer="Answer4" data-correct="false">
-                    <a href="#Q3">4%</a>
+                    <a href="#LP">4%</a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container" id="div2">
+        <a href="http://www.equalmeasures2030.org/">
+            <img class ="main-logo" width="200" height="150" src="http://www.equalmeasures2030.org/wp-content/uploads/2017/10/em2030.jpg">
+        </a>
+    </div>
 </section>
 <!--/.sledes-3-->
+<!--.slides-4-->
+<secion class="slides">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="question xs-hidden" id="LP">Results</h2>
+                <p>
+                    You got 50% of the answers right. Congratulations.
+                    Do you want to make it 100% next time?
+                    Try to learn more and thank you for participating.
+                </p>
+            </div>
+        </div>
+        <div>
+            extra &nbsp;&nbsp; space
+        </div>
+
+    </div>
+</secion>
+<!--/.slides-4-->
 <!--/.sliders-wrapper>
 
 <!-- .main-footer -->
@@ -191,7 +216,7 @@
 
 <script>
     $('#fullpage').fullpage({
-        anchors: ['Q1', 'Q2'],
+        anchors: ['Q1', 'Q2', 'LP'],
         menu: '#menu'
     });
 </script>
@@ -211,6 +236,7 @@
             }
         }
     }
+
 </script>
 
 <script src="js/main.js"></script>
