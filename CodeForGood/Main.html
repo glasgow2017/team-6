@@ -78,6 +78,19 @@
         <div>
             <img width="800" height="300" class ="start-img" src="http://www.equalmeasures2030.org/wp-content/uploads/2017/03/Empowerment_Senegal_4-Home.jpg">
         </div>
+
+            <!-- Dropdown to choose country -->
+            <button onclick="myDropdown()" class="dropbtn">Choose country</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#Senegal">Senegal</a>
+                <a href="#India">India</a>
+                <a href="#Colombia">Colombia</a>
+                <a href="#El_Salvador">El Salvador</a>
+                <a href="#Kenya">Kenya</a>
+                <a href="#Indonesia">Indonesia</a>
+            </div>
+        </div>
+
         <div class="em-answer"> <a href="#Q1"> Let's explore some statistics</a> style="color: black;" </div>
         <div class="row">
             <div class="col-md-5"></div>
@@ -176,6 +189,23 @@
         anchors: ['Q1', 'Q2'],
         menu: '#menu'
     });
+</script>
+<script>
+ function myDropdown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i=0; i< dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')){
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
 </script>
 
 <script src="js/main.js"></script>
